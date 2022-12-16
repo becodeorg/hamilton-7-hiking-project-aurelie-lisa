@@ -1,3 +1,5 @@
 .idea
 ./dbdata/
 .DS_Store
+.env
+
