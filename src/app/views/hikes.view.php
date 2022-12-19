@@ -8,5 +8,5 @@
     <button type="submit">Submit</button>
 </form>
 
-<h2
+<h2></h2>
 
