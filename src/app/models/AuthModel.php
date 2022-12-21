@@ -20,10 +20,6 @@ class Auth extends Database
             throw new Exception('Error during registration.');
         }
     }
-
-    /**
-     * @throws Exception
-     */
     public function find(string $username): array
     {
         if (!$user = $this->query(

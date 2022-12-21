@@ -1,7 +1,7 @@
 <footer>
     <section>
         <div class="copyright">
-            &copy; One more Hike: BeCode <?php echo date('Y')?>
+            &copy; BeCode <?php echo date('Y')?>
         </div>
         <div>
             <div id="icons">
@@ -13,3 +13,6 @@
         </div>
     </section>
 </footer>
+</body>
+</html>
+
