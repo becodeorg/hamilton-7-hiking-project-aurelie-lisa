@@ -12,9 +12,6 @@ class AuthController
         $this->authModel = new Auth();
     }
 
-    /**
-     * @throws Exception
-     */
     public function register(array $input): void
     {
         //vérifie que les champs ne sont pas vides
