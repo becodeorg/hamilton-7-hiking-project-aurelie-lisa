@@ -1,11 +1,17 @@
-
-<h2>Hiking Card</h2>
+<h2>hiking card</h2>
 <div>
-    <h3><?php  $hikes['hikeName']; ?></h3>
-    <p><?php  $hikes['hikeDescription']; ?></p>
-    <p><?php  $hikes['hikeDistance']; ?></p>
-    <p><?php  $hikes['hikeDuration']; ?></p>
-    <p><?php  $hikes['hikeElevation']; ?></p>
-    <p><?php  $hikes['updated_at']; ?></p>
-    <p><?php  $hikes['user_id']; ?></p>
+    <img src="#" alt="add">
+    <h3>Title of the hiking</h3>
+    <p>Text</p>
+    <img src="#" alt="distance">
+    <p>... KM</p>
+    <img src="#" alt="duration">
+    <p>...</p>
+    <img src="#" alt="elevation">
+    <p>... M</p>
+    <p>TAG</p>
+    <p>TAG</p>
+    <p>TAG</p>
+    <p>Date</p>
+    <p>Name of creator</p>
 </div>

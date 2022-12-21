@@ -42,3 +42,14 @@ if ($url === 'logout') {
     $authController = new AuthController();
     $authController->logout();
 }
+
+if ($url === 'allhike') {
+    $hikesController = new HikesController();
+    $hikesController->showAllHikes();
+}
+
+if ($url === 'hike') {
+    $id = $_GET['id'];
+    $hikesController = new HikesController();
+    $hikesController->showOne($id);
+}

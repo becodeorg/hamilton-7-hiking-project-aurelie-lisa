@@ -13,8 +13,8 @@ return array(
     'Composer\\Autoload\\ComposerStaticInitd6e311646916ab873bca6f3e5cca8014' => $vendorDir . '/composer/autoload_static.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Database' => $baseDir . '/app/models/Database.php',
+    'HikesController' => $baseDir . '/app/controllers/HikeController.php',
     'HikesModel' => $baseDir . '/app/models/HikesModel.php',
     'HomeController' => $baseDir . '/app/controllers/HomeController.php',
     'Users' => $baseDir . '/app/models/UserModel.php',
-    'hikesController' => $baseDir . '/app/controllers/HikeController.php',
 );
