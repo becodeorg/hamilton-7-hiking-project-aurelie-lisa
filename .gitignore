@@ -2,3 +2,5 @@
 ./dbdata/
 .DS_Store
 .env
+./src/vendor/
+
