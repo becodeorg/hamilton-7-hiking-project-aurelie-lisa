@@ -5,7 +5,7 @@ class HikesModel extends Database
     {
         try {
             return $this->query(
-                'SELECT NAME FROM hikes LIMIT 20'
+                'SELECT * FROM hikes, users LIMIT 20'
             )->fetchAll();
 
         } catch (Exception $e) {
@@ -14,13 +14,13 @@ class HikesModel extends Database
         }
     }
 
-    public function find(string $code): array|false
+    public function find(string $id): array|false
     {
         try {
             return $this->query(
-                "SELECT id, NAME FROM products WHERE id = ?",
+                'SELECT * FROM hikes, users WHERE hike_id = ?',
                 [
-                    $code
+                    $id
                 ]
             )->fetch();
 
