@@ -31,7 +31,6 @@ class AuthController
 
         $id = $this->authModel->getLastInsertId();
 
-        //? ? ?
         $_SESSION['user'] = [
             'id' => $id,
             'firstname' => $firstname,
@@ -40,6 +39,7 @@ class AuthController
             'email' => $email,
             'password' => $password,
             //'isAdmin' => false
+
         ];
 
         http_response_code(302);
@@ -53,10 +53,7 @@ class AuthController
         include 'app/views/includes/footer.view.php';
     }
 
-    /**
-     * @throws Exception
-     */
-    public function login(array $input) : void
+    public function login(array $input)
     {
         if (empty($input) || empty($input['username']) || empty($input['password'])) {
             throw new Exception('Form data not validated.');
@@ -90,10 +87,10 @@ class AuthController
         include 'app/views/includes/footer.view.php';
     }
 
+
     public function logout() : void
     {
         unset($_SESSION['user']);
-
         header('location: /');
     }
 }

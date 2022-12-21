@@ -8,3 +8,6 @@
     <title>Hikes</title>
 </head>
 <body>
+<header>
+</header>
+
