@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 class HikesModel extends Database
 {
     function convertTime($time, $format = '%02d:%02d')
@@ -15,7 +16,7 @@ class HikesModel extends Database
     {
         try {
             return $this->query(
-                'SELECT * FROM hikes, users LIMIT 20'
+                'SELECT * FROM hikes  LIMIT 20'
             )->fetchAll();
 
         } catch (Exception $e) {
@@ -28,7 +29,7 @@ class HikesModel extends Database
     {
         try {
             return $this->query(
-                'SELECT * FROM hikes, users WHERE hike_id = ?',
+                'SELECT * FROM hikes WHERE hike_id = ?',
                 [
                     $id
                 ]

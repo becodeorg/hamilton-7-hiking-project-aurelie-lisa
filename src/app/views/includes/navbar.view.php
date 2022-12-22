@@ -16,7 +16,7 @@
 </nav>
 
 
-<nav class="bg-gray-50 dark:bg-gray-700 ">
+<nav class="bg-gray-50 dark:bg-gray-700">
     <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
         <div class="flex items-center">
             <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
@@ -27,6 +27,11 @@
                 <li>
                     <a href="/allhike" class="text-gray-900 dark:text-white hover:text-cyan-600 hover:underline">Hikes</a>
                 </li>
+                <?php if ($_SESSION['user']) { ?>
+                    <li>
+                        <a href="/addhike" class="text-gray-900 dark:text-white hover:text-cyan-600 hover:underline">Add a Hike</a>
+                    </li>
+                <?php } ?>
             </ul>
         </div>
     </div>
