@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 class Auth extends Database
 {
     /**
@@ -25,7 +25,7 @@ class Auth extends Database
         if (!$user = $this->query(
             "SELECT * FROM users WHERE username = ?",
             [
-                $username,
+                $username
             ]
         )->fetch()) {
             throw new Exception('Failed login attempt : connection error.');
@@ -33,4 +33,23 @@ class Auth extends Database
 
         return $user;
     }
+//find user ID - not used yet
+
+/*
+    public function findUser(string $id): array|false
+    {
+        try {
+            return $this->query(
+                'SELECT * FROM users WHERE user_id = ?',
+                [
+                    $id,
+                ]
+            )->fetch();
+
+        } catch (Exception $e) {
+            echo $e->getMessage();
+            return [];
+        }
+    }
+*/
 }

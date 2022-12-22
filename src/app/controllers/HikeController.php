@@ -4,12 +4,13 @@ declare(strict_types=1);
 class HikesController
 {
     private HikesModel $hikesModel;
+
     public function __construct()
     {
         $this->hikesModel = new HikesModel();
     }
 
-    public function showAllHikes() : void
+    public function showAllHikes(): void
 
     {
         $hikes = $this->hikesModel->findAll();
@@ -34,3 +35,4 @@ class HikesController
         include 'app/views/includes/footer.view.php';
     }
 }
+

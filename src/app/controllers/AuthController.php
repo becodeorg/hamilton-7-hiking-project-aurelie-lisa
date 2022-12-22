@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 class AuthController
 {
     private Auth $authModel;
@@ -39,7 +38,6 @@ class AuthController
             'email' => $email,
             'password' => $password,
             //'isAdmin' => false
-
         ];
 
         http_response_code(302);
@@ -71,10 +69,15 @@ class AuthController
         }
 
         $_SESSION['user'] = [
-            "id" => $user["id"],
+            'id' => $user['user_id'],
+            'firstname' => $user['firstname'],
+            'lastname' => $user['lastname'],
             'username' => $user['username'],
-            'email' => $user['email']
+            'email' => $user['email'],
+            'password' => $user['password'],
+            //'isAdmin' => false
         ];
+
 
         // Then, we redirect to the home page
         http_response_code(302);
@@ -95,4 +98,6 @@ class AuthController
         unset($_SESSION['user']);
         header('location: /');
     }
+
 }
+

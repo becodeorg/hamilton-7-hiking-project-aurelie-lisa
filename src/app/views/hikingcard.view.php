@@ -1,17 +1,12 @@
-<h2>hiking card</h2>
+<h2>Hiking Card</h2>
 <div>
-    <img src="#" alt="add">
-    <h3>Title of the hiking</h3>
-    <p>Text</p>
-    <img src="#" alt="distance">
-    <p>... KM</p>
-    <img src="#" alt="duration">
-    <p>...</p>
-    <img src="#" alt="elevation">
-    <p>... M</p>
-    <p>TAG</p>
-    <p>TAG</p>
-    <p>TAG</p>
-    <p>Date</p>
-    <p>Name of creator</p>
+    <h3><?= $hike['hikeName']; ?></h3>
+    <p><?= $hike['hikeDescription']; ?></p>
+    <p><?= $hike['hikeDistance']; ?></p>
+    <p><?= $hike['hikeDuration']; ?></p>
+    <p><?= $hike['hikeElevation']; ?></p>
+    <p><?= $hike['updated_at']; ?></p>
+    //todo : change author to name and fix user issue
+    <p>Author : <?= $hike['user _id']; ?></p>
+
 </div>
