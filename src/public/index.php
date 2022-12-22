@@ -42,6 +42,10 @@ if ($url === 'logout') {
     $authController = new AuthController();
     $authController->logout();
 }
+if ($url === 'profile') {
+    $userProfile = new UserProfile();
+    $userProfile->showUserProfile();
+}
 
 if ($url === 'allhike') {
     $hikesController = new HikesController();
