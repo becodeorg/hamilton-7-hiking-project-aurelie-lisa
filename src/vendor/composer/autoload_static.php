@@ -17,7 +17,6 @@ class ComposerStaticInitd6e311646916ab873bca6f3e5cca8014
         'HikesController' => __DIR__ . '/../..' . '/app/controllers/HikeController.php',
         'HikesModel' => __DIR__ . '/../..' . '/app/models/HikesModel.php',
         'HomeController' => __DIR__ . '/../..' . '/app/controllers/HomeController.php',
-        'Users' => __DIR__ . '/../..' . '/app/models/UserModel.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

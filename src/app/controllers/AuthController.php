@@ -39,7 +39,6 @@ class AuthController
             'email' => $email,
             'password' => $password,
             //'isAdmin' => false
-
         ];
 
         http_response_code(302);

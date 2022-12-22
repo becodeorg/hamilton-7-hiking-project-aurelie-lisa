@@ -1,6 +1,16 @@
 <?php
 class HikesModel extends Database
 {
+    function convertTime($time, $format = '%02d:%02d')
+    {
+        if ($time < 60) {
+            return;
+        }
+        $hours = floor($time / 60);
+        $minutes = ($time % 60);
+        return sprintf($format, $hours, $minutes);
+    }
+
     public function findAll(): array|false
     {
         try {
@@ -30,14 +40,14 @@ class HikesModel extends Database
         }
     }
 
-    public function addHike(string $hikeName, int $hikeDistance, int $hikeDuration, int $hikeElevation, string $hikeDescription, string $created_at): void
+    public function addHike(string $hikeName, float $hikeDistance, int $hikeDuration, int $hikeElevation, string $hikeDescription, string $created_at): void
     {
         if (!$this->query(
-            'INSERT INTO hikes (hikeName, hikeDistance, hikeDuration, hikeElevation, hikeDescription,created_at ) VALUES (?,?,?,?,?,?)',
+            'INSERT INTO hikes (hikeName, hikeDistance, hikeDuration, hikeElevation, hikeDescription,created_at ) VALUE (?,?,?,?,?,?)',
             [
                 $hikeName,
                 $hikeDistance,
-                $hikeDuration,
+                $this->convertTime($hikeDuration),
                 $hikeElevation,
                 $hikeDescription,
                 $created_at

@@ -34,7 +34,7 @@ class HikesController
         include 'app/views/includes/footer.view.php';
     }
 
-    public function addHikeForm(string $id): void
+    public function addHikeForm(array $input): void
     {
         try{
             //vérifie que les champs ne sont pas vides
@@ -44,20 +44,20 @@ class HikesController
 
             //filtre bonne valeur
             $hikeName = htmlspecialchars($input['hikeName']);
-            $hikeDistance = intval(filter_var($input['hikeDistance'],FILTER_SANITIZE_NUMBER_INT));
-            $hikeDuration = intval(filter_var($input['hikeDuration']));
-            $hikeElevation = intvale(filter_var($input['hikeElevation'],FILTER_SANITIZE_NUMBER_INT));
-            $hikeDescription = filter_input($input['hikeElevation']);
-            $creationDate = date("m.d.y");
+            $hikeDistance = floatval(filter_var($input['hikeDistance'],FILTER_SANITIZE_NUMBER_FLOAT));
+            $hikeDuration = intval(filter_var($input['hikeDuration'],FILTER_SANITIZE_NUMBER_INT));
+            $hikeElevation = intval(filter_var($input['hikeElevation'],FILTER_SANITIZE_NUMBER_INT));
+            $hikeDescription = htmlspecialchars($input['hikeDescription']);
+            $creationDate = date("Y-m-d");
 
             $this->hikesModel->addHike($hikeName, $hikeDistance, $hikeDuration, $hikeElevation, $hikeDescription, $creationDate);
 
-                http_response_code(302);
-                header('location: /');
+            http_response_code(302);
+            header('location: /');
 
         } catch (Exception $e) {
             echo $e->getMessage() . '<br>';
-            echo '<a href="/addhike"></a>';
+            echo '<a href="/addhike">Add a hike here</a>';
         }
     }
 
