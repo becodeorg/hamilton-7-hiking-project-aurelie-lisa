@@ -1,5 +1,7 @@
 <h2>My profile</h2>
-<img src="#" alt="profile">
-<h3>First name - Last Name</h3>
-<li><a href="#">My details</a></li>
-<li><a href="#">My hikings</a></li>
+<div>
+
+    <h3> <?= $_SESSION['user']['firstname']; ?> <?= $_SESSION['user']['lastname']; ?></h3>
+    <p>Username: <?= $_SESSION['user']['username'];?></p>
+    <p>Email: <?= $_SESSION['user']['email'];?></p>
+</div>

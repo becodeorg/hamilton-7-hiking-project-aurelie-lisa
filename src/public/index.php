@@ -11,9 +11,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 if ($url === '') {
     $homeController = new HomeController();
-    $hikesController = new HikesController();
     $homeController->index();
-    $hikesController->showAllHikes();
 }
 
 if ($url === 'registration') {
@@ -54,17 +52,4 @@ if ($url === 'hike') {
     $id = $_GET['id'];
     $hikesController = new HikesController();
     $hikesController->showOne($id);
-}
-
-if ($url === 'addhike') {
-
-    $hikesController = new HikesController();
-
-    if ($method === 'GET') {
-        $hikesController->showAddHike();
-    }
-
-    if ($method === 'POST') {
-        $hikesController->addHikeForm($_POST);
-    }
 }
