@@ -40,17 +40,18 @@ class HikesModel extends Database
         }
     }
 
-    public function addHike(string $hikeName, float $hikeDistance, int $hikeDuration, int $hikeElevation, string $hikeDescription, string $created_at): void
+    public function addHike(string $hikeName, float $hikeDistance, int $hikeDuration, int $hikeElevation, string $hikeDescription, string $created_at, int $user_id): void
     {
         if (!$this->query(
-            'INSERT INTO hikes (hikeName, hikeDistance, hikeDuration, hikeElevation, hikeDescription,created_at ) VALUE (?,?,?,?,?,?)',
+            'INSERT INTO hikes (hikeName, hikeDistance, hikeDuration, hikeElevation, hikeDescription,created_at,user_id ) VALUE (?,?,?,?,?,?,?)',
             [
                 $hikeName,
                 $hikeDistance,
                 $this->convertTime($hikeDuration),
                 $hikeElevation,
                 $hikeDescription,
-                $created_at
+                $created_at,
+                $user_id
             ]
         )) {
             throw new Exception('Error during registration.');

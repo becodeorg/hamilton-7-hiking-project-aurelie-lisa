@@ -49,8 +49,9 @@ class HikesController
             $hikeElevation = intval(filter_var($input['hikeElevation'],FILTER_SANITIZE_NUMBER_INT));
             $hikeDescription = htmlspecialchars($input['hikeDescription']);
             $creationDate = date("Y-m-d");
+            $user_id = $_SESSION['user']['id'];
 
-            $this->hikesModel->addHike($hikeName, $hikeDistance, $hikeDuration, $hikeElevation, $hikeDescription, $creationDate);
+            $this->hikesModel->addHike($hikeName, $hikeDistance, $hikeDuration, $hikeElevation, $hikeDescription, $creationDate,$user_id);
 
             http_response_code(302);
             header('location: /');
