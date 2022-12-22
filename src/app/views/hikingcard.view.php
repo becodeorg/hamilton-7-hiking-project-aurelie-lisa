@@ -6,7 +6,7 @@
     <p><?= $hike['hikeDuration']; ?></p>
     <p><?= $hike['hikeElevation']; ?></p>
     <p><?= $hike['updated_at']; ?></p>
-    //todo :
-    <p>Autor : <?= $hike['user_id']; ?></p>
+    //todo : change author to name and fix user issue
+    <p>Author : <?= $hike['user_id']; ?></p>
 
 </div>

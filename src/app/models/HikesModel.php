@@ -29,4 +29,21 @@ class HikesModel extends Database
             return [];
         }
     }
+
+    public function addHike(string $hikeName, int $hikeDistance, int $hikeDuration, int $hikeElevation, string $hikeDescription, string $created_at): void
+    {
+        if (!$this->query(
+            'INSERT INTO hikes (hikeName, hikeDistance, hikeDuration, hikeElevation, hikeDescription,created_at ) VALUES (?,?,?,?,?,?)',
+            [
+                $hikeName,
+                $hikeDistance,
+                $hikeDuration,
+                $hikeElevation,
+                $hikeDescription,
+                $created_at
+            ]
+        )) {
+            throw new Exception('Error during registration.');
+        }
+    }
 }

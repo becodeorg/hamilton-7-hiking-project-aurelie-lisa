@@ -53,3 +53,8 @@ if ($url === 'hike') {
     $hikesController = new HikesController();
     $hikesController->showOne($id);
 }
+
+if ($url === 'addhike') {
+    $hikesController = new HikesController();
+    $hikesController->showAddHike();
+}
