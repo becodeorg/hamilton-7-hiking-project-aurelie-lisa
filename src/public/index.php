@@ -53,3 +53,16 @@ if ($url === 'hike') {
     $hikesController = new HikesController();
     $hikesController->showOne($id);
 }
+
+if ($url === 'addhike') {
+
+    $hikesController = new HikesController();
+
+    if ($method === 'GET') {
+        $hikesController->showAddHike();
+    }
+
+    if ($method === 'POST') {
+        $hikesController->addHikeForm($_POST);
+    }
+}

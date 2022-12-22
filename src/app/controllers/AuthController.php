@@ -71,9 +71,12 @@ class AuthController
         }
 
         $_SESSION['user'] = [
-            "id" => $user["id"],
+            "id" => $user["user_id"],
+            'firstname' => $user['firstname'],
+            'lastname' => $user['lastname'],
             'username' => $user['username'],
-            'email' => $user['email']
+            'email' => $user['email'],
+            'password' => $user['$password'],
         ];
 
         // Then, we redirect to the home page
