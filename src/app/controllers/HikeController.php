@@ -33,6 +33,7 @@ class HikesController
         include 'app/views/hikingcard.view.php';
         include 'app/views/includes/footer.view.php';
     }
+
     public function addHikeForm(array $input): void
     {
         try{

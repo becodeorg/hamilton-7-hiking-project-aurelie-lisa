@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-class UserProfile
+class UserController
 {
 
     private Auth $userModel;
@@ -17,7 +17,6 @@ class UserProfile
         include 'app/views/profile.view.php';
         include 'app/views/includes/footer.view.php';
     }
-
 }
 
 

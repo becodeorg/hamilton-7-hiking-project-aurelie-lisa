@@ -43,8 +43,8 @@ if ($url === 'logout') {
     $authController->logout();
 }
 if ($url === 'profile') {
-    $userProfile = new UserProfile();
-    $userProfile->showUserProfile();
+    $userController = new UserController();
+    $userController->showUserProfile();
 }
 
 if ($url === 'allhike') {

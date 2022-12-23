@@ -12,7 +12,7 @@
             <p class="text-gray-700 text-base"><i class="fa-solid fa-arrow-trend-up"></i> <?= $hike['hikeElevation'] ?> m</p>
         </div>
         <div class="px-6 py-4">
-            <a href="/hike?id=<?= $hike['hike_id']; ?>/<?= $hike['firstname']; ?><?= $hike['lastname']; ?>">
+            <a href="/hike?id=<?= $hike['hike_id']; ?>">
                 <h3 class="font-bold text-xl mb-2"><?= $hike['hikeName'] ?></h3>
             </a>
             <p class="text-gray-700 text-base"><?= $hike['hikeDescription'] ?></p>
