@@ -30,5 +30,5 @@ HTML, CSS, PHP, MySQL.
 
 ## **Link :**
 * [Trello](https://trello.com/b/SMC3lnWx/hiking-project-🥾)
-* [Lisa Mazzarisi](https://www.figma.com/file/q80ioMyQJyoL5sxdJwlhXz/Untitled?node-id=0%3A1&t=dYOoRuqS5Ho4v2Qo-1)
+* [Figma](https://www.figma.com/file/q80ioMyQJyoL5sxdJwlhXz/Untitled?node-id=0%3A1&t=dYOoRuqS5Ho4v2Qo-1)
 
