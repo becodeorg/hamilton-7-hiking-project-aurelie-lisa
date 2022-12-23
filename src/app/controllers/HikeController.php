@@ -34,6 +34,14 @@ class HikesController
         include 'app/views/includes/footer.view.php';
     }
 
+    public function showUserHikes() : void
+    {
+        $hikes = $this->hikesModel->findUserHike();
+
+        include 'app/views/userHike.view.php';
+        include 'app/views/includes/footer.view.php';
+    }
+
     public function addHikeForm(array $input): void
     {
         try{

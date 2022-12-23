@@ -16,7 +16,7 @@
                 <h3 class="font-bold text-xl mb-2"><?= $hike['hikeName'] ?></h3>
             </a>
             <p class="text-gray-700 text-base"><?= $hike['hikeDescription'] ?></p>
-            <p class="text-gray-700 text-base">Author : <?= $hike['user_id'] ?></p>
+            <p class="text-gray-700 text-base">Author : <?= $hike['firstname'] ?></p>
         </div>
         <!--  <p>TAG</p>
         <p>TAG</p>

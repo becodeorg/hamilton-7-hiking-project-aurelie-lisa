@@ -45,6 +45,10 @@ if ($url === 'logout') {
 if ($url === 'profile') {
     $userController = new UserController();
     $userController->showUserProfile();
+
+    $hikesController = new HikesController();
+    $hikesController->showUserHikes();
+
 }
 
 if ($url === 'allhike') {

@@ -15,7 +15,6 @@ class UserController
         include 'app/views/includes/header.view.php';
         include 'app/views/includes/navbar.view.php';
         include 'app/views/profile.view.php';
-        include 'app/views/includes/footer.view.php';
     }
 }
 

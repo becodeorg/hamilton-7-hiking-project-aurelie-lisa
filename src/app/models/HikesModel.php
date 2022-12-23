@@ -41,6 +41,18 @@ class HikesModel extends Database
         }
     }
 
+    public function findUserHike(): array|false
+    {
+        try {
+            $userID = $_SESSION["user"]["id"];
+            return $this->query('SELECT users.firstname, users.lastname, users.username, hikes.hike_id, hikes.hikeName, hikes.hikeDistance, hikes.hikeDuration, hikes.hikeElevation, hikes.hikeDescription, hikes.created_at FROM users INNER JOIN hikes ON users.user_id = hikes.user_id WHERE users.user_id =' . "$userID")->fetchAll();
+
+        } catch (Exception $e) {
+            echo $e->getMessage();
+            return [];
+        }
+    }
+
     public function addHike(string $hikeName, float $hikeDistance, int $hikeDuration, int $hikeElevation, string $hikeDescription, string $created_at, int $user_id): void
     {
         if (!$this->query(
