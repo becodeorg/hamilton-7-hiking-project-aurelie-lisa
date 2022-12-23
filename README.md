@@ -1,7 +1,7 @@
 # Challenge: Hiking Project in PHP, MySQL
 **Fourth group project initiated by Becode.**  
   
-**Link of project:** [Hiking Project](#)  
+**Link of project:** [Hiking Project](https://discussible-lumber.000webhostapp.com/registration)  
 
 This project consists in developing a hiking application, capable of storing one's favorite routes. The site is dynamic. This means that users can log in and add their own hikes. They can also modify them, and delete them.
 
