@@ -1,3 +1,4 @@
+
 <style>
     .homepage {
         background-image: url('images/moutain-snow.jpg');
@@ -13,9 +14,9 @@
 
             <h1 class="text-4xl lg:text-5xl xl:text-6xl text-cyan-600 tracking-wider font-bold font-serif mt-12 text-center">Find your next hike!</h1>
             <div class=" flex flex-col items-center space-y-4 mt-24">
-                <form class="w-full flex items-center">
+                <form class="w-full flex items-center" method="get" action="" name="fo">
                     <input type="search" name="search" id="default-search" class="w-72 p-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300 rounded-tl rounded-bl text-sm" placeholder="Search..." required>
-                    <button type="submit" class="bg-cyan-600 hover:bg-cyan-600 py-2 px-6 text-white border border-cyan-600 rounded-tr rounded-br text-sm">
+                    <button type="submit" name="submit" class="bg-cyan-600 hover:bg-cyan-600 py-2 px-6 text-white border border-cyan-600 rounded-tr rounded-br text-sm">
                         <svg aria-hidden="true" class="w-5 h-5 text-white dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                     </button>
                 </form>
@@ -29,6 +30,8 @@
             </div>
         </div>
     </div>
+
+
 
 
 
