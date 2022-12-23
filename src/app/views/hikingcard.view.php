@@ -1,7 +1,7 @@
-<div class="w-full md:w-4/5 md:m-auto">
-<div class="rounded overflow-hidden shadow-lg flex flex-wrap items-start justify-start p-4">
+<div class="sm:w-4/5 sm:m-auto">
+<div class="rounded overflow-idden shadow-lg flex flex-wrap sm:flex-nowrap items-start justify-start p-4">
     <img class="m-w-full h-96 m-4" src="/images/mountain-hike.jpeg" alt="Mountain trail">
-    <div class="m-4 md:max-w-[50%]">
+    <div class="m-4 sm:max-w-[50%]">
         <h2 class=" uppercase mb-2 text-2xl font-extrabold tracking-tight leading-none text-cyan-600 md:text-3xl lg:text-5xl"><?= $hike['hikeName']; ?></h2>
 
         <div class="flex justify-start gap-2 mb-2">

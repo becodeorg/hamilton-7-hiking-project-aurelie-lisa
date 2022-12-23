@@ -37,7 +37,7 @@ class HikesController
 
     public function showUserHikes() : void
     {
-        $hikes = $this->hikesModel->findUserHike();
+        $hikesUser = $this->hikesModel->findUserHike();
 
         include 'app/views/userHike.view.php';
         include 'app/views/includes/footer.view.php';
