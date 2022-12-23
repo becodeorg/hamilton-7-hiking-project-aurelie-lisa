@@ -6,9 +6,7 @@
         <img class="w-full h-96 p-4" src="/images/mountain-hike.jpeg" alt="Mountain trail">
         <div class="flex justify-around">
             <p class="text-gray-700 text-base"><i class="fa-solid fa-person-hiking"></i> <?= $hike['hikeDistance'] ?> km</p>
-            <!-- <img src="#" alt="duration"> -->
             <p class="text-gray-700 text-base"><i class="fa-regular fa-clock"></i> <?= $hike['hikeDuration'] ?></p>
-            <!-- <img src="#" alt="elevation"> -->
             <p class="text-gray-700 text-base"><i class="fa-solid fa-arrow-trend-up"></i> <?= $hike['hikeElevation'] ?> m</p>
         </div>
         <div class="px-6 py-4">
