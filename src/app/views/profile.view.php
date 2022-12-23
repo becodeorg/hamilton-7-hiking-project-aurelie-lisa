@@ -9,11 +9,11 @@
                 <p><?= $_SESSION['user']['username'];?></p>
             </div>
             <div class="flex gap-2 flex-wrap">
-                <p class="font-extrabold">Firstname: </p>
+                <p class="font-extrabold">First name: </p>
                 <p><?= $_SESSION['user']['firstname'];?></p>
             </div>
             <div class="flex gap-2 flex-wrap">
-                <p class="font-extrabold">Lastname:  </p>
+                <p class="font-extrabold">Last name:  </p>
                 <p><?= $_SESSION['user']['lastname'];?></p>
             </div>
             <div class="flex gap-2 flex-wrap">
