@@ -1,33 +1,34 @@
-# Challenge: Character Manager in JS
-**Third group project initiated by Becode.**  
+# Challenge: Hiking Project in PHP, MySQL
+**Fourth group project initiated by Becode.**  
   
-**Link of project:** [Character Manager](https://becodeorg.github.io/hamilton-7-character-manager-javascript-lovers/)  
+**Link of project:** [Hiking Project](#)  
 
- This project was set up to allow us to use the best JS practices, as well as to read, test and use REST API (API of Becode) with HTTP requests.
- It also allowed us to create an asynchronous flow and manipulate the DOM.
+This project consists in developing a hiking application, capable of storing one's favorite routes. The site is dynamic. This means that users can log in and add their own hikes. They can also modify them, and delete them.
 
 ## **Who did this project?**
 **Team members:**
-* [Sacha Jeunejean](https://github.com/sachajeunejean?tab=repositories)
+* [Lisa Mazzarisi](https://github.com/lilouMazzarisi)
 * [Aurélie Van Hellemont](https://github.com/Avanhellemont)
 
-## **Who did what?**
-* **Sacha Jeunejean:** create files, part of JS, debug
-* **Aurélie Van Hellemont:** sass, readme.md and test for the delete button in JS.  
-
-Together we created the HTML files and agreed on the class names, for an organized work.
-
 ## **What's the goal of this projet?**
-It's a Becode Challenge, the goal is to train our team work and our HTML, Markdown, SCSS, responsive, B.E.M and git skills. But mainly to improve in the JS language with REST API, HTTP.
+It's a Becode Challenge, the goal is to train our team work and our HTML, Markdown, CSS (Tailwind), and git skills. But mainly to improve in the PHP language with MySQL, Docker.
+
+ * Project planning.
+ * Mock-up creation.
+ * semantical HTML.
+ * Database creation.
+ * Creation of dynamic website.
+ * Secure programming (with nice errors messages).
+ * Use a router.
+ * OOP.
+ * MVC architecture.
+ * Agile methodology.
 
 ## **Which languages were used?**
 
-HTML, SCSS, JS.
+HTML, CSS, PHP, MySQL.
 
-## **What was the easiest part?**
-* **Sacha Jeunejean:** Overall, the JS.
-* **Aurélie Van Hellemont :** Easy in the design side, CSS. I was able to learn more about the SASS subject and the responsive.
+## **Link :**
+* [Trello](https://trello.com/b/SMC3lnWx/hiking-project-🥾)
+* [Lisa Mazzarisi](https://www.figma.com/file/q80ioMyQJyoL5sxdJwlhXz/Untitled?node-id=0%3A1&t=dYOoRuqS5Ho4v2Qo-1)
 
-## **What was the hardest part?**
-* **Sacha Jeunejean:** Manage the image formats to send to the API, the bugs it generated in the requests, ...
-* **Aurélie Van Hellemont:** JS, API, and Git.
