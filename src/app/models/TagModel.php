@@ -1,14 +1,13 @@
 <?php
 
 declare(strict_types=1);
-class Tags extends Database
+class TagsModel extends Database
 {
-    public function findAllTags()
+    public function findAllTags() : array|false
     {
         try {
-            $hike_id=$hike['id'];
             return $this->query(
-                'SELECT * FROM tags JOIN type ON tags.tag_id = type.tag_id JOIN hikes on hikes.hike_id = type.hike_id WHERE hike.id = '.$hike_id)->fetchAll();
+                'SELECT * FROM tags LIMIT 20')->fetchAll();
 
         } catch (Exception $e) {
             echo $e->getMessage();

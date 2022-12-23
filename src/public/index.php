@@ -50,6 +50,10 @@ if ($url === 'profile') {
     $hikesController->showUserHikes();
 
 }
+if ($url === 'tags') {
+
+}
+
 
 if ($url === 'allhike') {
     $hikesController = new HikesController();

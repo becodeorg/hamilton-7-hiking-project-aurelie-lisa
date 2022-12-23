@@ -1,4 +1,10 @@
 <h2 class="text-center uppercase m-4 text-4xl font-extrabold tracking-tight leading-none text-gray-700 md:text-5xl lg:text-6xl">All hikes</h2>
+<div class="justify-center flex gap-5">
+    <?php
+    $tagsController = new TagsController();
+    $tagsController->showAllTags();
+    ?>
+</div>
 <div class="justify-center flex flex-wrap gap-5">
 
     <?php foreach ($hikes as $hike) : ?>
